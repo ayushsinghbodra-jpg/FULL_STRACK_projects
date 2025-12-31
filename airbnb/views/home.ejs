@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StayFindr — Book unique homes and experiences</title>
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header>
+      <div>
+        <h1>StayFindr</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/homes">Explore</a></li>
+          <li><a href="/host">Become a Host</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/login">Log in</a></li>
+          <li><a href="/signup">Sign up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Search bar / hero -->
+    <section id="hero">
+      <h2>Find a place to stay, anywhere</h2>
+      <p>Search homes, experiences, and adventures around the world.</p>
+      <form action="/homes" method="GET" aria-label="Search for stays">
+        <label>
+          Location
+          <input type="search" name="location" placeholder="Where are you going?">
+        </label>
+        <label>
+          Check-in
+          <input type="date" name="checkin">
+        </label>
+        <label>
+          Check-out
+          <input type="date" name="checkout">
+        </label>
+        <label>
+          Guests
+          <input type="number" name="guests" min="1" value="1">
+        </label>
+        <button type="submit">Search</button>
+      </form>
+
+      <p><a href="/explore">Browse all stays</a> • <a href="/experiences">Experiences</a></p>
+    </section>
+
+    <!-- Featured categories / quick links -->
+    <section aria-labelledby="categories-heading">
+      <h3 id="categories-heading">Browse by category</h3>
+      <ul>
+        <li><a href="/homes?type=entire">Entire homes</a></li>
+        <li><a href="/homes?type=private">Private rooms</a></li>
+        <li><a href="/homes?type=unique">Unique stays</a></li>
+        <li><a href="/homes?type=pet">Pet-friendly</a></li>
+        <li><a href="/homes?type=family">Family-friendly</a></li>
+      </ul>
+    </section>
+
+    <!-- Featured stays -->
+    <section aria-labelledby="featured-heading">
+      <h3 id="featured-heading">Featured stays</h3>
+      <p>Handpicked stays from hosts you can trust.</p>
+      <div>
+        <!-- Card 1 -->
+        <article>
+          <img src="https://via.placeholder.com/400x250?text=Cozy+Loft" alt="Cozy loft living room">
+          <h4><a href="/homes/1">Cozy Loft in City Center</a></h4>
+          <p>2 guests · 1 bedroom · 1 bath</p>
+          <p>Rs 2,500 / night</p>
+        </article>
+
+        <!-- Card 2 -->
+        <article>
+          <img src="https://via.placeholder.com/400x250?text=Seaside+Bungalow" alt="Seaside bungalow exterior">
+          <h4><a href="/homes/2">Seaside Bungalow with Ocean View</a></h4>
+          <p>4 guests · 2 bedrooms · 2 baths</p>
+          <p>Rs 5,400 / night</p>
+        </article>
+
+        <!-- Card 3 -->
+        <article>
+          <img src="https://via.placeholder.com/400x250?text=Mountain+Cabin" alt="Mountain cabin in snow">
+          <h4><a href="/homes/3">Mountain Cabin Retreat</a></h4>
+          <p>6 guests · 3 bedrooms · 2 baths</p>
+          <p>Rs 7,800 / night</p>
+        </article>
+      </div>
+      <p><a href="/homes">See all homes</a></p>
+    </section>
+
+    <!-- How it works -->
+    <section aria-labelledby="how-heading">
+      <h3 id="how-heading">How StayFindr works</h3>
+      <ol>
+        <li>Search for a place and choose your dates.</li>
+        <li>Message the host with any questions.</li>
+        <li>Book securely and get confirmation.</li>
+      </ol>
+      <p><a href="/help">Learn more about booking</a></p>
+    </section>
+
+    <!-- For hosts CTA -->
+    <section aria-labelledby="host-heading">
+      <h3 id="host-heading">Share your space</h3>
+      <p>Earn money by hosting travelers from around the world.</p>
+      <p><a href="/host">Start hosting</a></p>
+    </section>
+
+    <!-- Testimonials / Reviews -->
+    <section aria-labelledby="reviews-heading">
+      <h3 id="reviews-heading">What guests are saying</h3>
+      <blockquote>
+        <p>"A wonderful stay — clean, comfortable, and exactly as described."</p>
+        <cite>— A. Guest</cite>
+      </blockquote>
+      <blockquote>
+        <p>"Our host was extremely helpful and recommended great local spots."</p>
+        <cite>— B. Traveler</cite>
+      </blockquote>
+    </section>
+
+    <!-- Newsletter signup -->
+    <section aria-labelledby="newsletter-heading">
+      <h3 id="newsletter-heading">Get travel deals</h3>
+      <form action="/newsletter" method="POST">
+        <label>
+          Email address
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- Footer (links, legal, social) -->
+    <footer>
+      <div>
+        <nav aria-label="Footer navigation">
+          <ul>
+            <li><a href="/about">About</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/press">Press</a></li>
+            <li><a href="/policies">Policies</a></li>
+            <li><a href="/help">Help</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <p>Country/Region: India</p>
+        <p>Language: English</p>
+      </div>
+
+      <div>
+        <p>&copy; 2025 StayFindr, Inc.</p>
+        <p><a href="/terms">Terms</a> • <a href="/privacy">Privacy</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
